@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NavSafe</title>
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 10px;
+    }
+
+    #map {
+      height: 100vh;
+      width: 100%;
+    }
+
+    input {
+      padding: 8px;
+      margin: 5px;
+      width: 200px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 8px 15px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<div style="position:absolute; top:10px; left:10px; right:10px; background:white; padding:10px; border-radius:10px;">
+  <input id="start" placeholder="Start location">
+  <input id="end" placeholder="Destination">
+  <button onclick="getRoute()">Go</button>
+  <button onclick="toggleEmergency()">🚨</button>
+</div>
+
+<div id="infoPanel" style="
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  background:white;
+  padding:15px;
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  box-shadow:0 -2px 10px rgba(0,0,0,0.2);
+">
+  <p id="infoText">Safety info will appear here</p>
+</div>
+
+</body>
