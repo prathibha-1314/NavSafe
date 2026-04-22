@@ -73,19 +73,6 @@ NavSafe introduces **context-aware routing**, where navigation adapts based on u
 
 ---
 
-## 📷 Screenshots
-
-(Add your screenshots here)
-
----
-
-## 👩‍💻 Developed By
-
-Prathibha P  
-Computer Science Engineering Student  
-
----
-
 ## ⭐ Conclusion
 
 NavSafe demonstrates how navigation systems can evolve from speed-based routing to **safety-first intelligent systems**, making it especially useful for women and emergency scenarios.
